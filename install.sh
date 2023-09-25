@@ -3,7 +3,7 @@
 #-> 1. create an conda environment 
 conda remove --name pointsite_inference --all -y
 conda create --name pointsite_inference python=3.6 -y
-source activate pointsite_inference
+conda activate pointsite_inference
 
 #-> 2. install related library
 pip install torch==1.3.0
@@ -17,4 +17,4 @@ python util/setup_test.py
 rm -rf build/ dist/ sparseconvnet.egg-info 
 
 #-> 4. deactivate
-source deactivate 2> /dev/null
+conda deactivate 2> /dev/null

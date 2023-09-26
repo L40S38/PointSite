@@ -13,9 +13,13 @@ conda install pillow -c conda-forge -y
 
 #-> 3. run setup
 #rm -rf build/ dist/ sparseconvnet.egg-info sparseconvnet/SCN*.so
+#sudo apt-get update
+#sudo apt install g++
 #python setup.py develop
 python util/setup_test.py
 #rm -rf build/ dist/ sparseconvnet.egg-info 
 
 #-> 4. deactivate
 conda deactivate 2> /dev/null
+
+#sudo apt -y install meshlab

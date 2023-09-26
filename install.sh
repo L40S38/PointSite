@@ -12,10 +12,10 @@ conda install tqdm -c conda-forge -y
 conda install pillow -c conda-forge -y
 
 #-> 3. run setup
-rm -rf build/ dist/ sparseconvnet.egg-info sparseconvnet/SCN*.so
-python setup.py develop
+#rm -rf build/ dist/ sparseconvnet.egg-info sparseconvnet/SCN*.so
+#python setup.py develop
 python util/setup_test.py
-rm -rf build/ dist/ sparseconvnet.egg-info 
+#rm -rf build/ dist/ sparseconvnet.egg-info 
 
 #-> 4. deactivate
 conda deactivate 2> /dev/null
